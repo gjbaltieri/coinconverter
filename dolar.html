@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Dólar/Real</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    
+    <a href="index.html"><img src="./images/criptomoeda.png" class="images btc"alt="btc"></a>
+    <a href="dolar.html"><img src="./images/dolar.png" class="images"alt="btc"></a>
+    <a href="euro.html"><img src="./images/euro.png" class="images"alt="btc"></a>
+        
+
+    <form>
+        <div id="container">
+
+            <div id="leftside">
+
+                <span class="symbol S" >$</span>
+                <input type="number" id="inputDol" class="input" value = 1 onClick="this.select();"> 
+
+            </div>
+            <p> = </p>
+        <div id="rightside">
+
+                <input type="number" id="saidaDol" class="input" onClick="this.select();">
+                <span class="symbol">Brl</span> 
+
+            </div>
+
+        </div>
+        
+    </form>
+
+        
+        <script src="./cotacão.js"></script>
+        <script src="./script.js"></script>
+    
+</body>
+</html>
