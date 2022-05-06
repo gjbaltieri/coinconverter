@@ -15,7 +15,6 @@ CoinBtc:  function () {fetch(urlCripto)
                 let BTCNum = parseFloat(BTC)
                 BTCValue = BTCNum
                 console.log(BTCNum)
-
                 })},
 
 
@@ -42,3 +41,4 @@ CoinEuro: async function () {await fetch(urlCoin)
 cotações.CoinBtc()
 cotações.CoinDolar()
 cotações.CoinEuro()
+

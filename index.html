@@ -10,9 +10,9 @@
 <body>
     
        <div id="icons"> 
-            <a href="index.html"><img src="./images/criptomoeda.png" class="images btc"alt="btc"></a>
-            <a href="dolar.html"><img src="./images/dolar.png" class="images"alt="btc"></a>
-            <a href="euro.html"><img src="./images/euro.png" class="images"alt="btc"></a>
+            <img src="./images/criptomoeda.png" class="images btc"alt="btc" id="btc">
+            <img src="./images/dolar.png" class="images"alt="dol" id="dol">
+            <img src="./images/euro.png" class="images"alt="euro" id="euro">
     </div>
 
     <form>
@@ -20,14 +20,14 @@
 
             <div id="leftside">
 
-                <span class="symbol B" >฿</span>
-                <input type="number" id="inputBTC" class="input entrada" value = 1 onClick="this.select();"> 
+                <span class="symbol B" id="symbol">฿</span>
+                <input type="number" id="input" class="input entrada" value = 1 onClick="this.select();" min="0" id="input"> 
 
             </div>
             <p> = </p>
         <div id="rightside">
 
-                <input type="number" id="saidaBTC" class="input saida" onClick="this.select();">
+                <input type="number" id="saida" class="input saida" onClick="this.select();">
                 <span class="symbol">Brl</span> 
 
             </div>
@@ -35,8 +35,7 @@
         </div>
         
     </form>
-
-        
+    
         <script src="./cotacão.js"></script>
         <script src="./script.js"></script>
     

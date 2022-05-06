@@ -35,7 +35,9 @@ p {text-align: center;
 
 .images {width: 40px;
     margin: 20px;
+    cursor: pointer;
 }
+
 
 @media screen and (max-width: 936px) {
     p {display: none;}
