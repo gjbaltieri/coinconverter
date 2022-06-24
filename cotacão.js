@@ -7,7 +7,8 @@ let EUROValue
 
 let cotações = {
 
-CoinBtc:  function () {fetch(urlCripto)
+CoinBtc:  async function () {
+    await fetch (urlCripto)
     .then(res => res.json())
             .then(data => {
                console.log(data)
@@ -18,7 +19,8 @@ CoinBtc:  function () {fetch(urlCripto)
                 })},
 
 
-CoinDolar: async function () {await fetch(urlCoin)
+CoinDolar: async function () {
+    await fetch(urlCoin)
     .then(res => res.json())
             .then(data => {
                 console.log(data)
@@ -27,7 +29,8 @@ CoinDolar: async function () {await fetch(urlCoin)
                 DOLValue = DOLNum
                 console.log(DOLNum)})},
 
-CoinEuro: async function () {await fetch(urlCoin)
+CoinEuro: async function () {
+    await fetch(urlCoin)
         .then(res => res.json())
             .then(data => {
                                                 
